@@ -2,6 +2,12 @@ name: sync-wiki
 on:
   push:
     branches: [master]
+    paths:
+    - '.github/workflows/sync-wiki.yml'
+    - 'docs/**'
+concurrency:
+  group: sync-wiki-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   sync-wiki:
