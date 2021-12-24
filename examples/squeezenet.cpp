@@ -14,6 +14,7 @@
 
 #include "net.h"
 
+#include <functional> 
 #include <algorithm>
 #if defined(USE_NCNN_SIMPLEOCV)
 #include "simpleocv.h"
