@@ -15,6 +15,7 @@
 #include "c_api.h"
 
 #include <algorithm>
+#include <functional>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <stdio.h>
